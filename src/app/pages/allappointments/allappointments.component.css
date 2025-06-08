@@ -1,0 +1,143 @@
+header{
+  display:flex;
+  font-size: larger;
+  background-color:gainsboro;
+  border-bottom: 1px solid grey;
+}
+header p{
+  margin-left: 1%;
+  font-weight: bolder;
+  font-size:150%;
+  color:#0a9fbd;
+}
+
+
+.filter-by-search{
+  display: flex;
+  width: 16.5%;
+  height: 10%;
+  box-shadow:0 .1rem 1rem rgba(0,0,0.1);
+  margin-left:55%;
+  margin-top: 1%;
+  }
+  .filter-by-search button{
+    border:none;
+  padding: .1rem 1rem;
+  color:grey;
+  background-color:white;
+  font-size:medium;
+  }
+  .filter-by-search input{
+    width: 78%;
+    color:grey;
+    border: none;
+    background-color:white;
+    font-size:small;
+    border:1px solid white;
+  }
+
+.setting_btn{
+  width: 2%;
+  height: 10%;
+  margin-left:2%;
+  margin-top: 1%;
+  font-size: medium;
+  box-shadow:0 .1rem 1rem rgba(0,0,0.1);
+  background-color: white;
+  border-radius: 50%;
+}
+
+.setting_btn button {
+  color:grey;
+  border: none;
+  border-radius: 50%;
+}
+
+.bell_btn{
+  width: 2%;
+  height: 10%;
+  margin-left:2%;
+  margin-top: 1%;
+  font-size: medium;
+  box-shadow:0 .1rem 1rem rgba(0,0,0.1);
+  background-color: white;
+  border-radius: 50%;
+
+}
+
+.bell_btn button {
+  color:grey;
+  border: none;
+  border-radius: 50%;
+}
+
+.main{
+  padding-top:1rem;
+  background-color:gainsboro;
+  padding-bottom:3.9%;
+  
+}
+
+.filter-by
+{
+  color: grey;
+  margin-left: 70%;
+  font-size:small;
+  font-weight: bold;
+}
+.filter-by select{
+  width: 50%;
+  color:grey;
+  border: none;
+  background-color:gainsboro;
+  font-size:small;
+  box-shadow:0 .1rem 1rem rgba(0,0,0.1);
+  margin-left: 2%;
+}
+
+.container {
+  /* border: 2px solid black; */
+  width: 80%;
+  padding-top:.7rem;
+  margin-top: 2%;
+  background-color:white;
+  border-radius:1%;
+  box-shadow:0 .1rem 1rem rgba(0,0,0.1);
+}
+
+h4 {
+  margin: 2rem 0rem 1rem;
+}
+
+.table-image {
+  td, th {
+    vertical-align: middle;
+  }
+}
+
+.th-head{
+  border:1px solid gainsboro;
+  background-color:gainsboro;
+  color: grey;
+  font-size:medium;
+  font-family:serif;
+}
+
+
+td,th{
+  border: none;
+  font-size:small;
+
+}
+
+td button{
+margin-left: 1%;
+background-color: #0dcaf0;
+border-color:white;
+}
+
+td button:hover{
+  background-color: white;
+  border-color:  #0dcaf0;
+  color:  #0dcaf0;
+}

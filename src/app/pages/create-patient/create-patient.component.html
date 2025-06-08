@@ -1,0 +1,166 @@
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Add Patient</h1>
+  </header>
+  <div class="form-wrap">
+    <form id="survey-form">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input
+              [(ngModel)]="patient.name"
+              type="text"
+              id="name"
+              [ngModelOptions]="{standalone: true}"
+              placeholder="Enter your name"
+              class="form-control"
+              required
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label id="name-label" for="name">Email Address</label>
+            <input
+            [(ngModel)]="patient.email"
+            [ngModelOptions]="{standalone: true}"
+              type="text"
+              id="email"
+              placeholder="Enter your Email"
+              class="form-control"
+              required
+            />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label id="name-label" for="name">Mobile Number</label>
+            <input
+            [(ngModel)]="patient.mobile"
+            [ngModelOptions]="{standalone: true}"
+              type="number"
+              id="mobile"
+              placeholder="Enter your mobile number"
+              class="form-control"
+              required
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3">
+          <div class="form-group">
+            <label id="number-label" for="number">Gender</label>
+            <select [(ngModel)]="patient.gender" [ngModelOptions]="{standalone: true}" class="form-control" aria-label="Default select example">
+              <option>Select Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group">
+            <label id="text" for="text">DOB</label>
+            <input
+            [(ngModel)]="patient.DOB"
+            [ngModelOptions]="{standalone: true}"
+              type="date"
+              id="text"
+              class="form-control"
+              placeholder="DOB"
+            />
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group">
+            <label id="number-label" for="number">Age</label>
+            <input
+            [(ngModel)]="patient.age"
+            [ngModelOptions]="{standalone: true}"
+              type="number"
+              id="number"
+              min="10"
+              max="99"
+              class="form-control"
+              placeholder="Age"
+            />
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group">
+            <label id="number-label" for="number">Blood Group</label>
+            <select [(ngModel)]="patient.bloodGroup" [ngModelOptions]="{standalone: true}" class="form-control" aria-label="Default select example">
+              <option>Select Blood Group</option>
+              <option value="A+">A+</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B-">B-</option>
+              <option value="AB+">AB+</option>
+              <option value="AB-">AB-</option>
+              <option value="O+">O+</option>
+              <option value="O-">O-</option>
+
+              , B+, B-, AB+, AB-, O+, and O-
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label id="address-label" for="address">Address</label>
+            <input
+            [(ngModel)]="patient.address"
+            [ngModelOptions]="{standalone: true}"
+              type="text"
+              id="address"
+              placeholder="Address"
+              class="form-control"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="form-group">
+            <label id="address-label" for="city"> City</label>
+            <input
+            [(ngModel)]="patient.city"
+            [ngModelOptions]="{standalone: true}"
+              type="text"
+              id="city"
+              placeholder="City"
+              class="form-control"
+              required
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label id="number-label">Referred By</label>
+            <select [(ngModel)]="patient.referredBy" [ngModelOptions]="{standalone: true}" class="form-control" aria-label="Default select example">
+              <option value="Dr.Ramdas Shingare">Dr. Ramdas Shingare</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <button (click)="submit()" class="btn btn-primary btn-block">
+            Add New Patient
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

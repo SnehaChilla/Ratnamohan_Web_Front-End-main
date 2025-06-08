@@ -1,0 +1,27 @@
+<div style="border: 1px solid black; border-radius: 10px; padding: 20px">
+  <h5>Patient Name -</h5>
+
+  <h5>Age -</h5>
+
+  <h5>Sex -</h5>
+</div>
+<div class="container mt-3">
+  <button class="btn btn-primary mb-2" (click)="addRow()">Add Row</button>
+  <button class="btn btn-primary mb-2" (click)="collectData()">Collect</button>
+
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th *ngFor="let col of columns">{{ col }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of rows; let i = index">
+        <td *ngFor="let cell of row.values">
+          <input type="text" class="form-control" />
+        </td>
+        <td><button (click)="removeRow(i)">Remove</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

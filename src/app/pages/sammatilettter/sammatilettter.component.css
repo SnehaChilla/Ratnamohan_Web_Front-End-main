@@ -1,0 +1,23 @@
+.signature-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+canvas {
+  border: 2px solid black;
+  background: white;
+  width: 400px;
+  height: 200px;
+  touch-action: none; /* Prevent scrolling on touch devices */
+}
+
+
+
+.container {
+  max-width: 800px;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+}

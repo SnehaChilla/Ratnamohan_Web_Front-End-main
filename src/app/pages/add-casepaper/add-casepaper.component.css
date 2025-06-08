@@ -1,0 +1,89 @@
+h1{
+    text-align: center;
+    font-weight: bold;
+}
+
+.Main{
+    width: 75%;
+    font-weight: bold;
+    margin-left: 13.5%;
+    margin-top: 2%;
+    padding:1rem 0rem;
+    padding-left: 4rem;
+  box-shadow:0 .1rem 1rem #0dcaf0;
+  border-radius: 2%;
+
+}
+
+.detail1 input{
+ border-top:none;
+ border-left:none;
+ border-right:none;
+}
+
+.patientName{
+    width: 90%;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+}
+
+.detail2 input{
+    width:16%;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+   }
+
+
+.detail3 input{
+    border-top:none;
+    border-left:none;
+    border-right:none;
+}
+
+.detail3 div input {
+    border-top:none;
+    border-left:none;
+    border-right:none;
+}
+
+.detail4 input{
+    width:40%;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+}
+
+
+button{
+    width: 50%;
+    color: white;
+    margin-left: 25%;
+    background-color: #0dcaf0;
+    border:1px solid white;
+    border-radius: 5%;
+}
+button:hover{
+    color:#0dcaf0;
+    background-color: white;
+    border-color: #0dcaf0;
+}
+
+
+.detail5 input{
+    border-top:none;
+    border-left:none;
+    border-right:none;
+}
+
+tr{
+    border: 1px solid black;
+    border-bottom: none;
+    
+}
+th,td{
+    border: 1px solid black;
+    text-align: center;  
+}
+td textarea{border:none}

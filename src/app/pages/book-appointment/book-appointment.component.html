@@ -1,0 +1,269 @@
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Book An Appointment</h1>
+  </header>
+  <div class="form-wrap">
+    <form id="survey-form">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label id="name-label" for="name">Patient Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Display Patient Name"
+              class="form-control"
+              required
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label id="name-label" for="name">Email</label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Enter your Email"
+              class="form-control"
+              required
+            />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label id="name-label" for="name">Mobile Number</label>
+            <input
+              type="number"
+              name="mobile"
+              id="mobile"
+              placeholder="Enter your mobile number"
+              class="form-control"
+              required
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3">
+          <div class="form-group">
+            <label id="number-label" for="number">Gender</label>
+            <select class="form-control" aria-label="Default select example">
+              <option>Select Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group">
+            <label id="text" for="text">DOB</label>
+            <input
+              type="date"
+              name="dob"
+              id="text"
+              class="form-control"
+              placeholder="DOB"
+            />
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group">
+            <label id="number-label" for="number">Age</label>
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="10"
+              max="99"
+              class="form-control"
+              placeholder="Age"
+            />
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group">
+            <label id="number-label" for="number">Blood Group</label>
+            <input
+              type="text"
+              name="bloodGroup"
+              id="text"
+              class="form-control"
+              placeholder="Blood Group"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label id="address-label" for="address">Address</label>
+            <input
+              type="text"
+              name="address"
+              id="address"
+              placeholder="Address"
+              class="form-control"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="form-group">
+            <label id="address-label" for="city"> City</label>
+            <input
+              type="text"
+              name="city"
+              id="city"
+              placeholder="City"
+              class="form-control"
+              required
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label id="number-label">Referred By</label>
+            <select class="form-control" aria-label="Default select example">
+              <option value="Dr.Ramdas Shingare">Dr. Ramdas Shingare</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label id="number-label">Service Name</label>
+            <select class="form-control" aria-label="Default select example">
+              <option value="consultation">Consultation</option>
+              <option value="dressing">Dressing</option>
+              <option value="ipd">IPD Charges</option>
+              <option value="iv">IV Charges</option>
+              <option value="lab">LAB Charges</option>
+              <option value="neu">Nebulization Charges</option>
+              <option value="opd">OPD Charges</option>
+              <option value="refer">Referring Charges</option>
+              <option value="vaccine">Vaccine Service</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label id="dtapt" for="dtapt">Date and Time</label>
+            <input
+              type="datetime-local"
+              name="dtapt"
+              id="dtapt"
+              class="form-control"
+              placeholder="Date and Time of Appointment"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label id="address-label" for="bp"> BP(mmHG)</label>
+            <input
+              type="text"
+              name="bp"
+              id="bp"
+              placeholder="BP"
+              class="form-control"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="form-group">
+            <label id="address-label" for="pulse"> Pulse(bpm)</label>
+            <input
+              type="text"
+              name="pulse"
+              id="pulse"
+              placeholder="Pulse"
+              class="form-control"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="form-group">
+            <label id="address-label" for="height"> Height(cm)</label>
+            <input
+              type="text"
+              name="height"
+              id="height"
+              placeholder="Height"
+              class="form-control"
+              required
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label id="address-label" for="weight"> Weight(kg)</label>
+            <input
+              type="text"
+              name="weight"
+              id="weight"
+              placeholder="Weight"
+              class="form-control"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="form-group">
+            <label id="address-label" for="temp"> Temperature</label>
+            <input
+              type="text"
+              name="temp"
+              id="temp"
+              placeholder="Temperature"
+              class="form-control"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="form-group">
+            <label id="address-label" for="spo"> SPO2(%)</label>
+            <input
+              type="text"
+              name="spo"
+              id="spo"
+              placeholder="SPO2"
+              class="form-control"
+              required
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <button (click)="bookApt()" class="btn btn-primary btn-block">
+            Book Appointment
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

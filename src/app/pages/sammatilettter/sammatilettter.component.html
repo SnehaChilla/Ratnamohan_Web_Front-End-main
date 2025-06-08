@@ -1,0 +1,110 @@
+<div class="container mt-4">
+  <h3 class="text-center bg-dark text-white p-2">संमती पत्र</h3>
+
+  <form>
+    <!-- First Section -->
+    <div class="mb-3">
+      <label class="form-label">१) मी खाली सही करणार</label>
+      <input type="text" class="form-control" placeholder="डॉ. / रूग्णाचे नाव">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">रूग्णाचे नातेवाईक / पालकाचे नाव</label>
+      <input type="text" class="form-control">
+    </div>
+
+    <p>यांच्या सत्यशय्या दवाखान्यामध्ये भरती होण्यास तयार आहे...</p>
+
+    <div class="mb-3">
+      <label class="form-label">रूग्णाची सही किंवा डाव्या हाताचा निशाणी अंगठा</label>
+      <input type="text" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">साक्षीदाराची सही</label>
+      <input type="text" class="form-control">
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <label class="form-label">नाव व पत्ता:</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="col-md-3">
+        <label class="form-label">तारीख:</label>
+        <input type="date" class="form-control">
+      </div>
+      <div class="col-md-3">
+        <label class="form-label">वेळ:</label>
+        <input type="time" class="form-control">
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Second Section -->
+    <div class="mb-3">
+      <label class="form-label">२) रूग्णाची प्रकृती चिंताजनक असल्याची...</label>
+      <p>रूग्णाच्या संबंधित नातेवाईकांना वेळीच कल्पना दिली आहे...</p>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">रूग्णाचे नातेवाईक / पालकाची सही किंवा अंगठा</label>
+      <input type="text" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">साक्षीदाराची सही</label>
+      <input type="text" class="form-control">
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <label class="form-label">नाव व पत्ता:</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="col-md-3">
+        <label class="form-label">तारीख:</label>
+        <input type="date" class="form-control">
+      </div>
+      <div class="col-md-3">
+        <label class="form-label">वेळ:</label>
+        <input type="time" class="form-control">
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="signature-container">
+  <canvas #canvas
+          (mousedown)="startDrawing($event)"
+          (mousemove)="draw($event)"
+          (mouseup)="stopDrawing()"
+          (mouseleave)="stopDrawing()"
+          (touchstart)="startDrawing($event)"
+          (touchmove)="draw($event)"
+          (touchend)="stopDrawing()">
+  </canvas>
+  <button (click)="saveSignature()">Save</button>
+  <button (click)="clearCanvas()">Clear</button>
+</div>

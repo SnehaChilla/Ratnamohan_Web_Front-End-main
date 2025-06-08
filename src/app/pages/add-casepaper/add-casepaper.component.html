@@ -1,0 +1,160 @@
+
+<h1>Patient CasePaper</h1>
+
+<!-- Page1 -->
+
+<div class="Main"   *ngIf="!isSecondPageVisible">
+<div class="Container">
+    <form [formGroup]="Casepaper1">
+  <div class="detail1">Dr.I/C : <input type="number"  formControlName="drIC">&nbsp;&nbsp;
+    I.P.D.No : <input type="number" formControlName="ipdNO">&nbsp;&nbsp;
+    Contact No : <input type="number"formControlName="contactNo"></div><br>
+
+    Name : <input class="patientName" type="text" formControlName="name"><br><br>
+
+    <div class="detail2">
+    Age : <input type="number" formControlName="age">&nbsp;&nbsp;
+    Sex : <input type="text" formControlName="sex">&nbsp;&nbsp;
+    Admission : <input type="text" formControlName="admission">&nbsp;&nbsp;
+    Advance : <input type="text" formControlName="advance"></div><br><br>
+
+    <div class="detail3">
+     <div style="display: flex;">Address: &nbsp; <textarea rows="2" cols="30"></textarea> &nbsp; &nbsp;
+    Date : <input style="margin-bottom: 5%;margin-left: 1%;margin-right: 2%;" type="date">&nbsp;
+    TIME : <input style="margin-bottom: 5%;margin-left: 1%;margin-right: 1%;" type="text">
+    <select style="margin-bottom: 5%;margin-left: 1%;margin-right: 1%;"><option>AM</option><option>PM</option></select> <br><br><br></div>
+
+    <div>Discharge Date : <input  type="date"> 
+        &nbsp; &nbsp; TIME : <input type="text">
+        <select><option>AM</option><option>PM</option></select> 
+        &nbsp; &nbsp; Total : <input type="text"></div>
+    </div><br><br>
+
+    <div class="detail4">
+        Referred By : <input type="text"> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+        Weight : <input style="width: 10%;" type="text">KG
+    </div><br><br>
+
+   <div style="display: flex;"> Dignosis - Provision & Final : &nbsp; &nbsp; <textarea rows="3" cols="90"> </textarea></div><br>
+
+   <div style="display: flex;">Complaints : &nbsp;<textarea rows="4" cols="107"></textarea></div><br>
+  
+   <div style="display: flex;">Past History : &nbsp;<textarea rows="5" cols="107"></textarea></div><br>
+
+   <div style="display: flex;">Personal History : &nbsp;<textarea rows="2" cols="103"></textarea></div><br>
+
+   <div style="display: flex;">On Examination Physiognomy : &nbsp;<textarea rows="7" cols="90"></textarea></div><br><br>
+
+    <button (click)="Continue()">Continue</button>
+</form>
+</div>
+</div>
+
+
+
+<!-- Page2 -->
+<div class="Main" *ngIf="isSecondPageVisible && !isThirdPageVisible"  style="width: 68%;margin-left: 15.5%;">
+    <p style="font-size: smaller; color:grey">(Case Continued)</p>
+ <div class="Container">
+    <form>
+<div class="detail5">
+    Name: <input type="text">
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Disease: <input type="text" >
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Regd.No:<input type="text" >
+</div><br><br>
+
+   <table style="width: 95%;height: 90% ;">
+   <tr style="background-color:gainsboro;color: grey;box-shadow:0 .1rem 1rem rgba(0,0,0.1);">
+        <th style="width:15%;">Date</th>
+        <th style="width:50%;">Clinical Notes</th>
+        <th style="width:30%;">Treatment</th>
+    </tr>
+    
+    <tr style="height: 600px;">
+        <td>  <textarea  rows="35" cols="15"></textarea></td>
+     <td> <textarea rows="35" cols="60"  ></textarea></td>
+        <td>  
+         <h6 style="font-size: small; text-align: left;margin-top: 5%;">O<sub>2</sub> :</h6>   <textarea style="border-bottom: 1px solid black;" rows="5" cols="26"></textarea><br><br>
+         <h6 style="font-size: small; text-align: left;">L.P : </h6>   <textarea style="border-bottom: 1px solid black;" rows="5" cols="26"></textarea><br><br>
+         <h6 style="font-size: small; text-align: left;">Venti : </h6>   <textarea style="border-bottom: 1px solid black;" rows="5" cols="26"></textarea><br><br>
+         <h6 style="font-size: small; text-align: left;">PICU :</h6>   <textarea style="border-bottom: 1px solid black;" rows="5" cols="26"></textarea><br><br>
+         <h6 style="font-size: small; text-align: left;">Ward :</h6>   <textarea style="border-bottom: 1px solid black;" rows="5" cols="26"></textarea>
+        </td>
+    </tr>
+   </table>
+   <button (click)="Page2_Continue_btn()" style="margin-top: 5%;">Continue</button>
+   </form>
+</div>
+</div>
+
+
+
+<!-- Page3 -->
+<div class="Main" *ngIf="isThirdPageVisible && !isExtraPageAdd"   style="width: 68%;margin-left: 15.5%;">
+    <p style="font-size: smaller; color:grey">(Case Continued)</p>
+ <div class="Container">
+    <form>
+<div class="detail5">
+    Name: <input type="text">
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Disease: <input type="text">
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Regd.No:<input type="text">
+</div><br><br>
+
+   <table style="width: 95%;height: 90% ;">
+   <tr style="background-color:gainsboro;color: grey;box-shadow:0 .1rem 1rem rgba(0,0,0.1);">
+        <th style="width:15%;">Date</th>
+        <th style="width:50%;">Clinical Notes</th>
+        <th style="width:30%;">Treatment</th>
+    </tr>
+    
+    <tr style="height: 600px;">
+        <td>  <textarea  rows="35" cols="15" ></textarea></td>
+     <td> <textarea rows="35" cols="60"  ></textarea></td>
+        <td><textarea rows="35" cols="26" ></textarea></td>
+    </tr>
+   </table>
+   <button (click)="Page3_Add_btn()" style="margin-top: 5%;">Add</button>
+   <button (click)="Page3_Submit_btn()" style="margin-top: 2%;">Submit</button>
+   </form>
+</div>
+</div>
+
+
+<!-- Page 4 -->
+<div class="Main" *ngIf="isExtraPageAdd"  style="width: 68%;margin-left: 15.5%;">
+    <p style="font-size: smaller; color:grey">(Case Continued)</p>
+ <div class="Container">
+    <form>
+<div class="detail5">
+    Name: <input type="text">
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Disease: <input type="text">
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Regd.No:<input type="text">
+</div><br><br>
+
+   <table style="width: 95%;height: 90% ;">
+   <tr style="background-color:gainsboro;color: grey;box-shadow:0 .1rem 1rem rgba(0,0,0.1);">
+        <th style="width:15%;">Date</th>
+        <th style="width:50%;">Clinical Notes</th>
+        <th style="width:30%;">Treatment</th>
+    </tr>
+    
+    <tr style="height: 600px;">
+        <td>  <textarea  rows="35" cols="15" ></textarea></td>
+     <td> <textarea rows="35" cols="60"  ></textarea></td>
+        <td><textarea rows="35" cols="26" ></textarea></td>
+    </tr>
+   </table>
+   <button (click)="Page3_Submit_btn()" style="margin-top: 5%;">Submit</button>
+   </form>
+</div>
+</div>
+
+
+
+
+
+
+
+  
+
+

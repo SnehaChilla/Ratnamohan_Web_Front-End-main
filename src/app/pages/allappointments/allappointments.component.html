@@ -1,0 +1,129 @@
+<html>
+  <head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  </head>
+ 
+
+<body>
+  <header>
+    <p>All Appointments</p>
+     <div class="filter-by-search"><button (click)="search_btn()" ><i class="fa fa-search"></i></button>
+      <input style="border: none;" placeholder="Search">
+    </div>
+   <div class="setting_btn"><button><i class="fa fa-gear"></i></button></div>
+   <div class="bell_btn"><button><i class="fa-regular fa-bell"></i></button></div>
+    </header>
+
+<div class="main">
+<div class="filter-by">
+  Filter by
+  <select>
+  <option>Select</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+</select>
+</div>
+
+<div class="container" >
+  <div class="row">
+    <div class="col-12">
+      <table class="table table-bordered" >
+        <thead>
+          <tr class="tr-head" >
+
+            <th scope="col" class="th-head">#</th>
+            <th scope="col" class="th-head">Patient Name</th>
+            <th scope="col" class="th-head">Date & Time</th>
+            <th scope="col" class="th-head">Appointed To</th>
+            <th scope="col" class="th-head">Service</th>
+            <th scope="col" class="th-head">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Sakshi Kore </td>
+            <td>01-05-2025</td>
+            <td>Ramdas</td>
+            <td>OPD</td>
+            <td>
+              <button type="button" class="btn btn-primary">View</button>
+              <button type="button" class="btn btn-success">Edit</button>
+              <button type="button" class="btn btn-danger">Delete</button>
+            </td>
+            
+
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Vaishnavi Birajdar</td>
+            <td>02-05-2025</td>
+            <td>Ramdas</td>
+            <td>OPD</td>
+            <td>
+              <button type="button" class="btn btn-primary">View</button>
+              <button type="button" class="btn btn-success">Edit</button>
+              <button type="button" class="btn btn-danger">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Samarth Parachande</td>
+            <td>03-05-2025</td>
+            <td>Ramdas</td>
+            <td>OPD</td>
+            <td>
+              <button type="button" class="btn btn-primary">View</button>
+              <button type="button" class="btn btn-success">Edit</button>
+              <button type="button" class="btn btn-danger">Delete</button>
+            </td>
+          </tr>
+         
+          <tr>
+            <th scope="row">4</th>
+            <td>Sakshi Kore </td>
+            <td>04-05-2025</td>
+            <td>Ramdas</td>
+            <td>OPD</td>
+            <td>
+              <button type="button" class="btn btn-primary">View</button>
+              <button type="button" class="btn btn-success">Edit</button>
+              <button type="button" class="btn btn-danger">Delete</button>
+            </td>
+            
+
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Vaishnavi Birajdar</td>
+            <td>05-05-2025</td>
+            <td>Ramdas</td>
+            <td>OPD</td>
+            <td>
+              <button type="button" class="btn btn-primary">View</button>
+              <button type="button" class="btn btn-success">Edit</button>
+              <button type="button" class="btn btn-danger">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Samarth Parachande</td>
+            <td>06-05-2025</td>
+            <td>Ramdas</td>
+            <td>OPD</td>
+            <td>
+              <button type="button" class="btn btn-primary">View</button>
+              <button type="button" class="btn btn-success">Edit</button>
+              <button type="button" class="btn btn-danger">Delete</button>
+            </td>
+          </tr>
+         
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
