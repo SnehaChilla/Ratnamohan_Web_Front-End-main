@@ -1,60 +1,28 @@
 h1{
     text-align: center;
     font-weight: bold;
+    color:  #0dcaf0;
 }
 
-.Main{
-    width: 75%;
+.container{
+    /* width: 75%; */
     font-weight: bold;
-    margin-left: 13.5%;
-    margin-top: 2%;
-    padding:1rem 0rem;
-    padding-left: 4rem;
+    /* margin-left: 13.5%; */
+    margin-top: 5%;
+    padding:1rem 2rem;
+    /* padding-left: 4rem; */
   box-shadow:0 .1rem 1rem #0dcaf0;
   border-radius: 2%;
 
 }
 
-.detail1 input{
+.container input{
  border-top:none;
  border-left:none;
  border-right:none;
+ border-bottom: 1px solid black;
+
 }
-
-.patientName{
-    width: 90%;
-    border-top:none;
-    border-left:none;
-    border-right:none;
-}
-
-.detail2 input{
-    width:16%;
-    border-top:none;
-    border-left:none;
-    border-right:none;
-   }
-
-
-.detail3 input{
-    border-top:none;
-    border-left:none;
-    border-right:none;
-}
-
-.detail3 div input {
-    border-top:none;
-    border-left:none;
-    border-right:none;
-}
-
-.detail4 input{
-    width:40%;
-    border-top:none;
-    border-left:none;
-    border-right:none;
-}
-
 
 button{
     width: 50%;
@@ -70,20 +38,3 @@ button:hover{
     border-color: #0dcaf0;
 }
 
-
-.detail5 input{
-    border-top:none;
-    border-left:none;
-    border-right:none;
-}
-
-tr{
-    border: 1px solid black;
-    border-bottom: none;
-    
-}
-th,td{
-    border: 1px solid black;
-    text-align: center;  
-}
-td textarea{border:none}

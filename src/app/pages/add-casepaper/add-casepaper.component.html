@@ -1,160 +1,226 @@
-
-<h1>Patient CasePaper</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <h1  class="my-3">Patient CasePaper</h1>
 
 <!-- Page1 -->
 
-<div class="Main"   *ngIf="!isSecondPageVisible">
-<div class="Container">
-    <form [formGroup]="Casepaper1">
-  <div class="detail1">Dr.I/C : <input type="number"  formControlName="drIC">&nbsp;&nbsp;
-    I.P.D.No : <input type="number" formControlName="ipdNO">&nbsp;&nbsp;
-    Contact No : <input type="number"formControlName="contactNo"></div><br>
+<div class="container" *ngIf="!isSecondPageVisible">
+<div class="input-group mb-3">
+    Dr.I/C : <input type="text" class="form-control" [(ngModel)]="Casepaper1.drIc"  >&nbsp;
+    I.P.D.No : <input type="number" class="form-control" [(ngModel)]="Casepaper1.ipdNO"  >&nbsp;
+    Contact No :<input type="number" class="form-control"[(ngModel)]="Casepaper1.contactNo"  >&nbsp;
+  </div><br>
 
-    Name : <input class="patientName" type="text" formControlName="name"><br><br>
+  <div class="input-group mb-3">
+    Name :  <input type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1"[(ngModel)]="Casepaper1.name" >
+  </div><br>
 
-    <div class="detail2">
-    Age : <input type="number" formControlName="age">&nbsp;&nbsp;
-    Sex : <input type="text" formControlName="sex">&nbsp;&nbsp;
-    Admission : <input type="text" formControlName="admission">&nbsp;&nbsp;
-    Advance : <input type="text" formControlName="advance"></div><br><br>
+  <div class="input-group mb-3">
+    Age : <input type="number" class="form-control" [(ngModel)]="Casepaper1.age"  >&nbsp;
+    Sex : <input type="text" class="form-control" [(ngModel)]="Casepaper1.sex" >&nbsp;
+    Admission : <input type="text" class="form-control" [(ngModel)]="Casepaper1.admission"  >&nbsp;
+    Advance : <input type="text" class="form-control"  [(ngModel)]="Casepaper1.advance" >&nbsp;
+  </div><br>
 
-    <div class="detail3">
-     <div style="display: flex;">Address: &nbsp; <textarea rows="2" cols="30"></textarea> &nbsp; &nbsp;
-    Date : <input style="margin-bottom: 5%;margin-left: 1%;margin-right: 2%;" type="date">&nbsp;
-    TIME : <input style="margin-bottom: 5%;margin-left: 1%;margin-right: 1%;" type="text">
-    <select style="margin-bottom: 5%;margin-left: 1%;margin-right: 1%;"><option>AM</option><option>PM</option></select> <br><br><br></div>
+  <div class="input-group mb-3">
+    Address : &nbsp;<textarea rows="2" cols="30"[(ngModel)]="Casepaper1.address"></textarea>  &nbsp;&nbsp;
+   &nbsp; Date : <input type="date" class="form-control"style="margin-bottom:2%;" [(ngModel)]="Casepaper1.date">&nbsp;
+    Time : <input type="text" class="form-control" style="margin-bottom:2%;"[(ngModel)]="Casepaper1.time" >&nbsp;
+    <select style="margin-bottom:2%;">
+      <option> AM</option>
+      <option >PM</option>
+    </select>
+  </div><br>
 
-    <div>Discharge Date : <input  type="date"> 
-        &nbsp; &nbsp; TIME : <input type="text">
-        <select><option>AM</option><option>PM</option></select> 
-        &nbsp; &nbsp; Total : <input type="text"></div>
-    </div><br><br>
+  <div class="input-group mb-3">
+    Discharge Date : <input type="date" class="form-control" style="margin-bottom:2%;"[(ngModel)]="Casepaper1.dischargeDate">&nbsp;
+    Time : <input type="text" class="form-control" style="margin-bottom:2%;" [(ngModel)]="Casepaper1.time">&nbsp;
+    <select style="margin-bottom:2%;">
+      <option >AM</option>
+      <option >PM</option>
+    </select>&nbsp;
+      Total : <input type="text" class="form-control" style="margin-bottom:2%;"[(ngModel)]="Casepaper1.total" >&nbsp;
+  </div><br>
 
-    <div class="detail4">
-        Referred By : <input type="text"> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-        Weight : <input style="width: 10%;" type="text">KG
-    </div><br><br>
+  <div class="input-group mb-3">
+    Referred By : <input type="date" class="form-control " [(ngModel)]="Casepaper1.referredBy" >&nbsp;
+    Weight : <input type="text" class="form-control " [(ngModel)]="Casepaper1.weight">kg&nbsp; 
+  </div><br>
 
-   <div style="display: flex;"> Dignosis - Provision & Final : &nbsp; &nbsp; <textarea rows="3" cols="90"> </textarea></div><br>
+  <div class="input-group mb-3">
+    Dignosis-Provision &nbsp;<br> & Final  :  <textarea rows="3" cols="120" [(ngModel)]="Casepaper1.dignosisProvisionFinal"></textarea>  &nbsp;&nbsp; 
+  </div><br>
 
-   <div style="display: flex;">Complaints : &nbsp;<textarea rows="4" cols="107"></textarea></div><br>
+  <div class="input-group mb-3 ">
+    Complaints  : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <textarea rows="3" cols="120" [(ngModel)]="Casepaper1.complaints"></textarea>  &nbsp;&nbsp; 
+  </div><br>
+
+  <div class="input-group mb-3">
+    Past History  :  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <textarea rows="3" cols="120" [(ngModel)]="Casepaper1.pastHistory"></textarea>  &nbsp;&nbsp; 
+  </div><br>
+
+  <div class="input-group mb-3">
+    Personal History  :   &nbsp;&nbsp;&nbsp;
+    <textarea rows="3" cols="120" [(ngModel)]="Casepaper1.personalHistory"></textarea>  &nbsp;&nbsp; 
+  </div><br>
+
+  <div class="input-group mb-3">
+    On Examination <br>Physiognomy : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <textarea rows="3" cols="120" [(ngModel)]="Casepaper1.onExaminationPhysiognomy"></textarea>  &nbsp;&nbsp; 
+  </div><br>
+
+  <button type="button" class="btn btn-info" (click)="Continue(Casepaper1)">Continue</button>
   
-   <div style="display: flex;">Past History : &nbsp;<textarea rows="5" cols="107"></textarea></div><br>
-
-   <div style="display: flex;">Personal History : &nbsp;<textarea rows="2" cols="103"></textarea></div><br>
-
-   <div style="display: flex;">On Examination Physiognomy : &nbsp;<textarea rows="7" cols="90"></textarea></div><br><br>
-
-    <button (click)="Continue()">Continue</button>
-</form>
 </div>
-</div>
+
+
 
 
 
 <!-- Page2 -->
-<div class="Main" *ngIf="isSecondPageVisible && !isThirdPageVisible"  style="width: 68%;margin-left: 15.5%;">
+<div class="container table-responsive" *ngIf="isSecondPageVisible && !isThirdPageVisible" >
     <p style="font-size: smaller; color:grey">(Case Continued)</p>
- <div class="Container">
-    <form>
-<div class="detail5">
-    Name: <input type="text">
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Disease: <input type="text" >
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Regd.No:<input type="text" >
-</div><br><br>
+ 
+    <div class="input-group mb-3">
+        Name : <input type="text" class="form-control"  [(ngModel)]="Casepaper1.name">&nbsp;
+        Disease : <input type="number" class="form-control" [(ngModel)]="Casepaper2.disease" >&nbsp;
+        Regd No :<input type="number" class="form-control" [(ngModel)]="Casepaper2.regdNo">&nbsp;
+      </div><br>
 
-   <table style="width: 95%;height: 90% ;">
-   <tr style="background-color:gainsboro;color: grey;box-shadow:0 .1rem 1rem rgba(0,0,0.1);">
-        <th style="width:15%;">Date</th>
-        <th style="width:50%;">Clinical Notes</th>
-        <th style="width:30%;">Treatment</th>
-    </tr>
+      <table class="table table-responsive" style="border:1px solid black; box-shadow:0 .1rem 1rem black;">
+        <thead >
+          <tr> 
+            <th scope="col"style="border:1px solid black;width:10%;background-color: gainsboro;text-align:center;" >
+              Date</th>
+            <th scope="col" style="border:1px solid black;width:60%;background-color: gainsboro;text-align:center">
+              Clinical Notes</th>
+            <th scope="col" style="border:1px solid black ;width:30%;background-color: gainsboro;text-align:center">
+              Treatment</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border:1px solid black">
+            <td scope="row" style="border:1px solid black;" ><textarea rows="35"style="border: none;" [(ngModel)]="Casepaper2.date"></textarea></td>
+            <td style="border:1px solid black" ><textarea rows="35"cols="72" style="border: none;"[(ngModel)]="Casepaper2.clinicalNotes"></textarea></td>
+            <td style="border:1px solid black" >
+              <h6>O<sub>2</sub> : </h6><textarea rows="5"cols="40"[(ngModel)]="Casepaper2.o2"></textarea><br><br>
+              <h6>L.P : </h6><textarea rows="5"cols="40"[(ngModel)]="Casepaper2.lp"></textarea><br><br>
+              <h6>Venti : </h6><textarea rows="5"cols="40"[(ngModel)]="Casepaper2.venti"></textarea><br><br>
+              <h6>PICU : </h6><textarea rows="5"cols="40"[(ngModel)]="Casepaper2.picu"></textarea><br><br>
+              <h6>Ward : </h6><textarea rows="5"cols="40"[(ngModel)]="Casepaper2.ward"></textarea>
+            </td>
+             
+          </tr>
+          </tbody>
+        </table> <br>
+          
+        <button type="button "class="btn btn-info"(click)="Page2_Continue_btn(Casepaper1.name,Casepaper2)">Continue</button>
+
+      </div>
+   
     
-    <tr style="height: 600px;">
-        <td>  <textarea  rows="35" cols="15"></textarea></td>
-     <td> <textarea rows="35" cols="60"  ></textarea></td>
-        <td>  
-         <h6 style="font-size: small; text-align: left;margin-top: 5%;">O<sub>2</sub> :</h6>   <textarea style="border-bottom: 1px solid black;" rows="5" cols="26"></textarea><br><br>
-         <h6 style="font-size: small; text-align: left;">L.P : </h6>   <textarea style="border-bottom: 1px solid black;" rows="5" cols="26"></textarea><br><br>
-         <h6 style="font-size: small; text-align: left;">Venti : </h6>   <textarea style="border-bottom: 1px solid black;" rows="5" cols="26"></textarea><br><br>
-         <h6 style="font-size: small; text-align: left;">PICU :</h6>   <textarea style="border-bottom: 1px solid black;" rows="5" cols="26"></textarea><br><br>
-         <h6 style="font-size: small; text-align: left;">Ward :</h6>   <textarea style="border-bottom: 1px solid black;" rows="5" cols="26"></textarea>
-        </td>
-    </tr>
-   </table>
-   <button (click)="Page2_Continue_btn()" style="margin-top: 5%;">Continue</button>
-   </form>
-</div>
-</div>
+   
 
 
 
 <!-- Page3 -->
-<div class="Main" *ngIf="isThirdPageVisible && !isExtraPageAdd"   style="width: 68%;margin-left: 15.5%;">
+<div class="container table-responsive" *ngIf="isThirdPageVisible && !isExtraPageAdd"  >
     <p style="font-size: smaller; color:grey">(Case Continued)</p>
- <div class="Container">
-    <form>
-<div class="detail5">
-    Name: <input type="text">
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Disease: <input type="text">
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Regd.No:<input type="text">
-</div><br><br>
+ 
+    <div class="input-group mb-3">
+        Name : <input type="text" class="form-control"  [(ngModel)]="Casepaper1.name">&nbsp;
+        Disease : <input type="number" class="form-control" [(ngModel)]="Casepaper2.disease" >&nbsp;
+        Regd No :<input type="number" class="form-control"  [(ngModel)]="Casepaper2.regdNo">&nbsp;
+      </div><br>
 
-   <table style="width: 95%;height: 90% ;">
-   <tr style="background-color:gainsboro;color: grey;box-shadow:0 .1rem 1rem rgba(0,0,0.1);">
-        <th style="width:15%;">Date</th>
-        <th style="width:50%;">Clinical Notes</th>
-        <th style="width:30%;">Treatment</th>
-    </tr>
-    
-    <tr style="height: 600px;">
-        <td>  <textarea  rows="35" cols="15" ></textarea></td>
-     <td> <textarea rows="35" cols="60"  ></textarea></td>
-        <td><textarea rows="35" cols="26" ></textarea></td>
-    </tr>
-   </table>
-   <button (click)="Page3_Add_btn()" style="margin-top: 5%;">Add</button>
-   <button (click)="Page3_Submit_btn()" style="margin-top: 2%;">Submit</button>
-   </form>
+
+      <table class="table table-responsive" style="border:1px solid black; box-shadow:0 .1rem 1rem black;">
+        <thead >
+          <tr> 
+            <th scope="col"style="border:1px solid black;width:10%;background-color: gainsboro;text-align:center;" >
+              Date</th>
+            <th scope="col" style="border:1px solid black;width:60%;background-color: gainsboro;text-align:center">
+              Clinical Notes</th>
+            <th scope="col" style="border:1px solid black ;width:30%;background-color: gainsboro;text-align:center">
+              Treatment</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border:1px solid black">
+            <td scope="row" style="border:1px solid black;" ><textarea rows="35"style="border: none;" [(ngModel)]="Casepaper2.date"></textarea></td>
+            <td style="border:1px solid black" ><textarea rows="35"cols="72" style="border: none;" [(ngModel)]="Casepaper2.clinicalNotes"></textarea></td>
+            <td style="border:1px solid black" >
+              <h6>O<sub>2</sub> : </h6><textarea rows="5"cols="40"  [(ngModel)]="Casepaper2.o2"></textarea><br><br>
+              <h6>L.P : </h6><textarea rows="5"cols="40" [(ngModel)]="Casepaper2.lp"></textarea><br><br>
+              <h6>Venti : </h6><textarea rows="5"cols="40" [(ngModel)]="Casepaper2.venti"></textarea><br><br>
+              <h6>PICU : </h6><textarea rows="5"cols="40" [(ngModel)]="Casepaper2.picu"></textarea><br><br>
+              <h6>Ward : </h6><textarea rows="5"cols="40"  [(ngModel)]="Casepaper2.ward"></textarea>
+            </td>
+             
+          </tr>
+          </tbody>
+        </table> <br>
+
+       <button type="button "class="btn btn-info"(click)="Page3_Add_btn(Casepaper1.name,Casepaper2)">Add</button><br>
+       <button type="button "class="btn btn-info"(click)="Page3_Submit_btn(Casepaper1.name,Casepaper2)">Submit</button>
+   
 </div>
-</div>
+
 
 
 <!-- Page 4 -->
-<div class="Main" *ngIf="isExtraPageAdd"  style="width: 68%;margin-left: 15.5%;">
+
+<div class="container table-responsive" *ngIf="isExtraPageAdd"  >
     <p style="font-size: smaller; color:grey">(Case Continued)</p>
- <div class="Container">
-    <form>
-<div class="detail5">
-    Name: <input type="text">
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Disease: <input type="text">
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Regd.No:<input type="text">
-</div><br><br>
+ 
+    <div class="input-group mb-3">
+        Name : <input type="text" class="form-control"  [(ngModel)]="Casepaper1.name" >&nbsp;
+        Disease : <input type="number" class="form-control"  [(ngModel)]="Casepaper2.disease" >&nbsp;
+        Regd No :<input type="number" class="form-control"  [(ngModel)]="Casepaper2.regdNo">&nbsp;
+      </div><br>
 
-   <table style="width: 95%;height: 90% ;">
-   <tr style="background-color:gainsboro;color: grey;box-shadow:0 .1rem 1rem rgba(0,0,0.1);">
-        <th style="width:15%;">Date</th>
-        <th style="width:50%;">Clinical Notes</th>
-        <th style="width:30%;">Treatment</th>
-    </tr>
+
+      <table class="table table-responsive" style="border:1px solid black; box-shadow:0 .1rem 1rem black;">
+        <thead >
+          <tr> 
+            <th scope="col"style="border:1px solid black;width:10%;background-color: gainsboro;text-align:center;" >
+              Date</th>
+            <th scope="col" style="border:1px solid black;width:60%;background-color: gainsboro;text-align:center">
+              Clinical Notes</th>
+            <th scope="col" style="border:1px solid black ;width:30%;background-color: gainsboro;text-align:center">
+              Treatment</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border:1px solid black">
+            <td scope="row" style="border:1px solid black;" ><textarea rows="35"style="border: none;" [(ngModel)]="Casepaper2.date"></textarea></td>
+            <td style="border:1px solid black" ><textarea rows="35"cols="72" style="border: none;" [(ngModel)]="Casepaper2.clinicalNotes"></textarea></td>
+            <td style="border:1px solid black" >
+              <h6>O<sub>2</sub> : </h6><textarea rows="5"cols="40" [(ngModel)]="Casepaper2.o2"></textarea><br><br>
+              <h6>L.P : </h6><textarea rows="5"cols="40" [(ngModel)]="Casepaper2.lp"></textarea><br><br>
+              <h6>Venti : </h6><textarea rows="5"cols="40" [(ngModel)]="Casepaper2.venti"></textarea><br><br>
+              <h6>PICU : </h6><textarea rows="5"cols="40"  [(ngModel)]="Casepaper2.picu"></textarea><br><br>
+              <h6>Ward : </h6><textarea rows="5"cols="40"  [(ngModel)]="Casepaper2.ward"></textarea>
+            </td>
+             
+          </tr>
+          </tbody>
+        </table> <br>
+       
+       <button type="button "class="btn btn-info"(click)="Page3_Submit_btn(Casepaper1,Casepaper2)">Submit</button>
+   
+</div>
+
     
-    <tr style="height: 600px;">
-        <td>  <textarea  rows="35" cols="15" ></textarea></td>
-     <td> <textarea rows="35" cols="60"  ></textarea></td>
-        <td><textarea rows="35" cols="26" ></textarea></td>
-    </tr>
-   </table>
-   <button (click)="Page3_Submit_btn()" style="margin-top: 5%;">Submit</button>
-   </form>
-</div>
-</div>
-
-
-
-
-
-
-
-  
-
-
+    
+   
+</body>
+</html>

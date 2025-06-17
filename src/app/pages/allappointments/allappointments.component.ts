@@ -8,8 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './allappointments.component.css'
 })
 export class AllappointmentsComponent {
-  search_btn()
-  {
-    alert("Hello");
-  }
+ 
 }
