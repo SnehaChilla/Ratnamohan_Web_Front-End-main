@@ -59,4 +59,9 @@ export class SammatilettterComponent {
     console.log('Signature Data URL:', dataURL);
   }
 
+  Submit()
+  {
+    alert("Sammati Letter Submitted Sucessfully!")
+  }
+
 }

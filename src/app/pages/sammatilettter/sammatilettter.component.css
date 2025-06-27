@@ -1,3 +1,81 @@
+h1{
+  text-align: center;
+  font-weight: bold;
+  color:  #0dcaf0;
+}
+
+
+.container{
+  /* width: 75%; */
+  font-weight: bold;
+  /* margin-left: 13.5%; */
+  margin-top: 5%;
+  padding:1rem 2rem;
+  /* padding-left: 4rem; */
+box-shadow:0 .1rem 1rem #0dcaf0;
+border-radius: 2%;
+
+}
+
+.container input{
+border-top:none;
+border-left:none;
+border-right:none;
+border-bottom: 1px solid black;
+
+}
+
+#btn{
+  width: 50%;
+  color: white;
+  margin-left: 25%;
+  background-color: #0dcaf0;
+  border:1px solid white;
+  border-radius: 5%;
+}
+#btn:hover{
+  color:#0dcaf0;
+  background-color: white;
+  border-color: #0dcaf0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .signature-container {
   display: flex;
   flex-direction: column;
@@ -15,9 +93,3 @@ canvas {
 
 
 
-.container {
-  max-width: 800px;
-  background: #f8f9fa;
-  padding: 20px;
-  border-radius: 8px;
-}
